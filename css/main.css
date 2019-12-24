@@ -16,3 +16,39 @@ a {
 span[role="img"] {
   filter: invert(92%);
 }
+
+#navigation-app img {
+  filter: contrast(1) brightness(1);
+}
+
+/**
+ * Hide atlassian logo
+ */
+#productLogoGlobalItem div:first-child {
+  display: none;
+}
+
+/**
+ * Add custom logo
+ */
+#productLogoGlobalItem:before {
+  content: "";
+  background: url("https://avatars3.githubusercontent.com/u/20477572?s=200&v=4");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  border-radius: 5px;
+}
+
+/**
+ * Make custom logo in :before orange
+ */
+#productLogoGlobalItem {
+  filter: hue-rotate(194deg);
+}
+
+button[type="button"] {
+  background: #cecece !important;
+}
